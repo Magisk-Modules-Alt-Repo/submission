@@ -29,7 +29,7 @@ jobs:
       - run: git remote update --prune
 ```
 
-Title it something like `update.yml`. The suggested Action above will check for updates every hour and merge the changes to the current repository. This will cause issues when the original repo owner force-pushes to their master branch.
+Title it something like `update.yml`. The suggested Action above will check for updates every hour and merge the changes to the current repository.
 
 If you don't know how to make the mirror yourself, or simply don't want to (understandable), follow the directions for the module submission, but instead of using the `[Module]` flair, use the `[Mirror]` flair to help the moderators differentiate your request.
 
