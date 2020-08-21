@@ -7,7 +7,7 @@ Just like the official Magisk Modules repository, this is where you can submit y
 * "Trivial" modules **are allowed**. This includes simple boot scripts.
 
 # Steps
-1. Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) on this repository with the link to your repo.
+1. Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) on this repository with `[Modulle]` in the title and include the link to your repo in the content.
 2. Wait for a moderator to approve or deny your module.
 
 # Mirrors
