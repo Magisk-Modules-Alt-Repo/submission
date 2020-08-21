@@ -17,7 +17,7 @@ You can create mirrors of already existing modules. You should put `[Mirror]` at
 name: Update Mirror
 on:
   schedule:
-    - cron: '*/60 * * * *'
+    - cron: '*/30 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
