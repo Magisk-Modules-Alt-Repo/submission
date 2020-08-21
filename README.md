@@ -52,7 +52,7 @@ These are the different levels that users can be assigned when choosing to contr
 | Remove others   	|    ✔   	|    ❌    	|       ❌       	|
 | Transfer repos  	|    ✔   	|    ❌    	|       ❌       	|
 
-If you are interested in becoming a collaborator, please make an issue on this repo to get started with a project of your own. If you think you are qualified to become a moderator, please create an issue with `[Moderator]` in the title. We currently only consider moderators for the admin positions, so you may not make a request for it.
+If you are interested in becoming a collaborator, please make an issue on this repo to get started with a project of your own. If you think you are qualified to become a moderator, please create an issue with `[Moderator]` in the title. We currently only consider existing moderators for the admin position, so you may not make a request for it.
 
 # Contact
 If you need assistance, feel free to contact any of our Alt repo moderators through email or Telegram.
