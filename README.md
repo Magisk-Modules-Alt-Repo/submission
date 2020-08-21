@@ -10,6 +10,8 @@ Just like the official Magisk Modules repository, this is where you can submit y
 1. Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) on this repository with `[Module]` in the title and include the link to your repo in the content.
 2. Wait for a moderator to approve or deny your module.
 
+Please make sure your repo name matches your module id, otherwise Magisk Manager will see that the module exists but will fail to pull data from it.
+
 # Mirrors
 You can create mirrors of already existing modules. You should put `[Mirror]` at the start of the repo description and in the issue title. If you want your module to auto-update, add a GitHub Action like this:
 
