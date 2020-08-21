@@ -6,7 +6,7 @@ Just like the official Magisk Modules repository, this is where you can submit y
 * Device-specific modules **are allowed**.
 * "Trivial" modules **are allowed**. This includes simple boot scripts.
 
-# Steps
+# Module Submissions
 1. Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) on this repository with `[Module]` in the title and include the link to your repo in the content.
 2. Wait for a moderator to approve or deny your module.
 
@@ -29,6 +29,8 @@ jobs:
 ```
 
 Title it something like `update.yml`. The suggested Action above will check for updates every hour and merge the changes to the current repository. This will cause issues when the original repo owner force-pushes to their master branch.
+
+If you don't know how to make the mirror yourself, or simply don't want to (understandable), follow the directions for the module submission, but instead of using the `[Module]` flair, use the `[Mirror]` flair to help the moderators differentiate your request.
 
 # Permission Levels
 These are the different levels that users can be assigned when choosing to contribute to this project.
