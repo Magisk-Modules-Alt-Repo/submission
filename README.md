@@ -26,8 +26,7 @@ jobs:
     steps:
       - name: Update mirrored repo
         uses: actions/checkout@v2
-      - run: git remote update --prune |
-             git pull
+      - run: git remote update --prune
 ```
 
 Title it something like `update.yml`. The suggested Action above will check for updates every hour and merge the changes to the current repository. This will cause issues when the original repo owner force-pushes to their master branch.
