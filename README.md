@@ -30,5 +30,25 @@ jobs:
 
 Title it something like `update.yml`. The suggested Action above will check for updates every hour and merge the changes to the current repository. This will cause issues when the original repo owner force-pushes to their master branch.
 
+# Permission Levels
+These are the different levels that users can be assigned when choosing to contribute to this project.
+
+* Collaborators are Magisk Module developers who must first make an issue and become approved
+* Members are moderators, they can create their own repos without requesting them beforehand
+* Owners are the admins, they have master control over the entire project
+
+|                 	| Owners 	| Members 	| Collaborators 	|
+|-----------------	|--------	|---------	|---------------	|
+| Commit changes  	|    ✔   	|    ✔    	|       ✔       	|
+| Request mirrors 	|    ✔   	|    ✔    	|       ✔       	|
+| Request repos   	|    ✔   	|    ✔    	|       ✔       	|
+| Create mirrors  	|    ✔   	|    ✔    	|       ❌       	|
+| Create repos    	|    ✔   	|    ✔    	|       ❌       	|
+| Manage members  	|    ✔   	|    ❌    	|       ❌       	|
+| Remove others   	|    ✔   	|    ❌    	|       ❌       	|
+| Transfer repos  	|    ✔   	|    ❌    	|       ❌       	|
+
+If you are interested in becoming a collaborator, please make an issue on this repo to get started with a project of your own. If you think you are qualified to become a moderator, please create an issue with `[Moderator]` in the title. We currently only consider moderators for the admin positions, so you may not make a request for it.
+
 # Contact
 If you need assistance, feel free to contact any of our Alt repo moderators through email or Telegram.
