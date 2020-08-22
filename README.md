@@ -40,7 +40,7 @@ These are the different levels that users can be assigned when choosing to contr
 * Members are moderators, they can create their own repos without requesting them beforehand
 * Owners are the admins, they have master control over the entire project
 
-|                 	| Owners 	| Members 	| Collaborators 	|
+|                 	| Admins 	| Moderators 	| Collaborators 	|
 |-----------------	|--------	|---------	|---------------	|
 | Commit changes  	|    ✔   	|    ✔    	|       ✔       	|
 | Request mirrors 	|    ✔   	|    ✔    	|       ✔       	|
