@@ -20,9 +20,9 @@ If you don't know how to make the mirror yourself, or simply don't want to (unde
 # Permission Levels
 These are the different levels that users can be assigned when choosing to contribute to this project.
 
-* Collaborators are Magisk Module developers who must first make an issue and become approved
-* Members are moderators, they can create their own repos without requesting them beforehand
-* Owners are the admins, they have master control over the entire project
+* Collaborators are Magisk Module developers who must first make an issue and become approved.
+* Members are moderators, they can create their own repos without requesting them beforehand.
+* Owners are the admins, they have master control over the entire project.
 
 |                 	| Admins 	| Moderators 	| Collaborators 	|
 |-----------------	|--------	|---------	|---------------	|
