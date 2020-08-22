@@ -33,6 +33,7 @@ These are the different levels that users can be assigned when choosing to contr
 | Create repos    	|    ✔   	|    ✔    	|       ❌       	|
 | Approve modules  	|    ✔   	|    ✔    	|       ❌       	|
 | Manage members  	|    ✔   	|    ❌    	|       ❌       	|
+| Remove repos    	|    ✔   	|    ❌    	|       ❌       	|
 | Remove others   	|    ✔   	|    ❌    	|       ❌       	|
 | Transfer repos  	|    ✔   	|    ❌    	|       ❌       	|
 
