@@ -1,11 +1,6 @@
 # Magisk Modules Alternative Repository Submissions
 Just like the official Magisk Modules repository, this is where you can submit your modules.
 
-# Differences
-* Instead of only a few moderators, the Alt-Repo has plenty of volunteers who are constantly reviewing your submissions.
-* Device-specific modules **are allowed**.
-* "Trivial" modules **are allowed**. This includes simple boot scripts.
-
 # Module Submissions
 Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) on this repository with `[Module]` in the title and include the link to your repo in the content, then wait for a moderator to approve or deny your module. Once approved, a moderator will mirror your personal repo to the Alt-Repo and give you ownership of it. It is best to then archive your personal repo and work soley here.
 
@@ -19,6 +14,18 @@ There are a few key differences between Module submissions and Mirror submission
 
 * Module submissions give developers their own working repository on the Alt-Repo, where they can push their code directly.  It **requires direct developer support** for updates to be created. This type of submission is best for developers who have created a module that they wish to maintain on the Alt-Repo.
 * Mirror submissions simply clone an existing repository from a developer to the Alt-Repo, where it is updated automatically every 30 minutes. Modules **do not require human maintenance**. It also **does not require the consent of the original developer** in order to mirror the module. This type of submission is best for non-developers who simply want to put a module that somebody else made on the Alt-Repo for easy access.
+
+# Submission Guidelines
+We want to make sure that there are no dangerous modules on the Alt-Repo. Please abide by these guidelines.
+
+* Device-specific modules **are allowed**.
+* "Trivial" modules **are allowed**. This includes simple boot scripts.
+* No malicious modules (deleting core files or breaking system intentionally).
+* No broken modules (doesn't do what it says it will).
+* No duplicate submissions.
+* Module ID must match repo name (otherwise Magisk Manager fails to download it).
+
+It is worth noting that the final approval decision comes from our moderators. If they do not see your module as being fit for the Alt-Repo, they have the choice to deny it. However, they are encouraged to stay unbaised when approving or rejecting modules.
 
 # Migrating  Repositories
 We have an internal (but publicly accessible) tool that makes migrating repositories to the Alt-Repo easy. Moderators should use [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) (Magisk-Module-Alt-Repo Migrate) to migrate existing repositories to the Alt-Repo.
