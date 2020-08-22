@@ -31,6 +31,7 @@ These are the different levels that users can be assigned when choosing to contr
 | Request repos   	|    ✔   	|    ✔    	|       ✔       	|
 | Create mirrors  	|    ✔   	|    ✔    	|       ❌       	|
 | Create repos    	|    ✔   	|    ✔    	|       ❌       	|
+| Approve modules  	|    ✔   	|    ✔    	|       ❌       	|
 | Manage members  	|    ✔   	|    ❌    	|       ❌       	|
 | Remove others   	|    ✔   	|    ❌    	|       ❌       	|
 | Transfer repos  	|    ✔   	|    ❌    	|       ❌       	|
