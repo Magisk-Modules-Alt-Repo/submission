@@ -7,15 +7,18 @@ Just like the official Magisk Modules repository, this is where you can submit y
 * "Trivial" modules **are allowed**. This includes simple boot scripts.
 
 # Module Submissions
-1. Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) on this repository with `[Module]` in the title and include the link to your repo in the content.
-2. Wait for a moderator to approve or deny your module.
+Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) on this repository with `[Module]` in the title and include the link to your repo in the content, then wait for a moderator to approve or deny your module. Once approved, a moderator will mirror your personal repo to the Alt-Repo and give you ownership of it. It is best to then archive your personal repo and work soley here.
 
-Please make sure your repo name matches your module id, otherwise Magisk Manager will see that the module exists but will fail to pull data from it.
+**Please make sure your repo name matches your module id, otherwise Magisk Manager will see that the module exists but will fail to pull data from it.**
 
-# Mirrors
-You can create mirrors of already existing modules. You should put `[Mirror]` at the start of the repo description and in the issue title. If you are a Moderator, you can use the internal [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) tool to automate this process.
+# Mirror Submissions
+You can create mirrors of already existing modules, which will be updated from the original repo automatically every 30 minutes. You should put `[Mirror]` at the start of the repo description and in the issue title. If you are a Moderator, you can use the internal [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) tool to automate this process. If you don't know how to make the mirror yourself, or simply don't want to (understandable), follow the directions for the module submission, but instead of using the `[Module]` flair, use the `[Mirror]` flair to help the moderators differentiate your request.
 
-If you don't know how to make the mirror yourself, or simply don't want to (understandable), follow the directions for the module submission, but instead of using the `[Module]` flair, use the `[Mirror]` flair to help the moderators differentiate your request.
+# Modules vs Mirrors
+There are a few key differences between Module submissions and Mirror submissions.
+
+* Module submissions give developers their own working repository on the Alt-Repo, where they can push their code directly.  It **requires direct developer support** for updates to be created. This type of submission is best for developers who have created a module that they wish to maintain on the Alt-Repo.
+* Mirror submissions simply clone an existing repository from a developer to the Alt-Repo, where it is updated automatically every 30 minutes. Modules **do not require human maintenance**. It also **does not require the consent of the original developer** in order to mirror the module. This type of submission is best for non-developers who simply want to put a module that somebody else made on the Alt-Repo for easy access.
 
 # Permission Levels
 These are the different levels that users can be assigned when choosing to contribute to this project.
