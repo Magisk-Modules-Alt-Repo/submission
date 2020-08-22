@@ -13,23 +13,7 @@ Just like the official Magisk Modules repository, this is where you can submit y
 Please make sure your repo name matches your module id, otherwise Magisk Manager will see that the module exists but will fail to pull data from it.
 
 # Mirrors
-You can create mirrors of already existing modules. You should put `[Mirror]` at the start of the repo description and in the issue title. If you want your module to auto-update, add a GitHub Action like this:
-
-```
-name: Update Mirror
-on:
-  schedule:
-    - cron: '*/30 * * * *'
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Update mirrored repo
-        uses: actions/checkout@v2
-      - run: git remote update --prune
-```
-
-Title it something like `update.yml`. The suggested Action above will check for updates every hour and merge the changes to the current repository.
+You can create mirrors of already existing modules. You should put `[Mirror]` at the start of the repo description and in the issue title. If you are a Moderator, you can use the internal [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) tool to automate this process.
 
 If you don't know how to make the mirror yourself, or simply don't want to (understandable), follow the directions for the module submission, but instead of using the `[Module]` flair, use the `[Mirror]` flair to help the moderators differentiate your request.
 
