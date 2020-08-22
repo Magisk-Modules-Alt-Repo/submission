@@ -20,6 +20,22 @@ There are a few key differences between Module submissions and Mirror submission
 * Module submissions give developers their own working repository on the Alt-Repo, where they can push their code directly.  It **requires direct developer support** for updates to be created. This type of submission is best for developers who have created a module that they wish to maintain on the Alt-Repo.
 * Mirror submissions simply clone an existing repository from a developer to the Alt-Repo, where it is updated automatically every 30 minutes. Modules **do not require human maintenance**. It also **does not require the consent of the original developer** in order to mirror the module. This type of submission is best for non-developers who simply want to put a module that somebody else made on the Alt-Repo for easy access.
 
+# Migrating  Repositories
+We have an internal (but publicly accessible) tool that makes migrating repositories to the Alt-Repo easy. Moderators should use [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) (Magisk-Module-Alt-Repo Migrate) to migrate existing repositories to the Alt-Repo.
+
+Here is an example use case for this tool:
+
+1. User A creates an issue titled `[Module] My Custom Module`.
+2. Moderator B approves the module submission.
+3. Moderator B navigates to their private mmar-migrate fork.
+4. Moderator B goes to the mmar-migrate Actions tab and enters the module information.
+5. Moderator B submits the Action and waits for the completion message.
+6. Moderator B navigates to the Alt-Repo clone / mirror and adds User A as a collaborator.
+7. Moderator B closes User A's issue.
+8. User A approves the invitation via email.
+
+The benefit of such a system is that moderators can be away from their computers and can handle all necessary migrations online through the GitHub website. This should speed up the module approval process significantly.
+
 # Permission Levels
 These are the different levels that users can be assigned when choosing to contribute to this project.
 
