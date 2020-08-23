@@ -7,7 +7,7 @@ Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) 
 **Please make sure your repo name matches your module id, otherwise Magisk Manager will see that the module exists but will fail to pull data from it.**
 
 # Mirror Submissions
-You can create mirrors of already existing modules, which will be updated from the original repo automatically every 30 minutes. You should put `[Mirror]` at the start of the repo description and in the issue title. If you are a Moderator, you can use the internal [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) tool to automate this process. If you don't know how to make the mirror yourself, or simply don't want to (understandable), follow the directions for the module submission, but instead of using the `[Module]` flair, use the `[Mirror]` flair to help the moderators differentiate your request.
+You can create mirrors of already existing modules, which will be updated from the original repo automatically every 30 minutes. Follow the same steps as the Module submission but replace the `[Module]` tag with `[Mirror]`. If you are a Moderator, you can use the internal [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) tool to automate this process.
 
 # Modules vs Mirrors
 There are a few key differences between Module submissions and Mirror submissions.
