@@ -6,15 +6,6 @@ Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) 
 
 **Please make sure your repo name matches your module id, otherwise Magisk Manager will see that the module exists but will fail to pull data from it.**
 
-# Mirror Submissions
-You can create mirrors of already existing modules, which will be updated from the original repo automatically every 30 minutes. Follow the same steps as the Module submission but replace the `[Module]` tag with `[Mirror]`. If you are a Moderator, you can use the internal [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) tool to automate this process.
-
-# Modules vs Mirrors
-There are a few key differences between Module submissions and Mirror submissions.
-
-* Module submissions give developers their own working repository on the Alt-Repo, where they can push their code directly.  It **requires direct developer support** for updates to be created. This type of submission is best for developers who have created a module that they wish to maintain on the Alt-Repo.
-* Mirror submissions simply clone an existing repository from a developer to the Alt-Repo, where it is updated automatically every 30 minutes. Modules **do not require human maintenance**. It also **does not require the consent of the original developer** in order to mirror the module. This type of submission is best for non-developers who simply want to put a module that somebody else made on the Alt-Repo for easy access.
-
 # Submission Guidelines
 We want to make sure that there are no dangerous modules on the Alt-Repo. Please abide by these guidelines.
 
@@ -53,9 +44,7 @@ These are the different levels that users can be assigned when choosing to contr
 |                 	| Admins 	| Moderators 	| Collaborators 	|
 |-----------------	|--------	|---------	|---------------	|
 | Commit changes  	|    ✔   	|    ✔    	|       ✔       	|
-| Request mirrors 	|    ✔   	|    ✔    	|       ✔       	|
 | Request repos   	|    ✔   	|    ✔    	|       ✔       	|
-| Create mirrors  	|    ✔   	|    ✔    	|       ❌       	|
 | Create repos    	|    ✔   	|    ✔    	|       ❌       	|
 | Approve modules  	|    ✔   	|    ✔    	|       ❌       	|
 | Manage members  	|    ✔   	|    ❌    	|       ❌       	|
