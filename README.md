@@ -1,6 +1,8 @@
 # Magisk Modules Alternative Repository Submissions
 Just like the official Magisk Modules repository, this is where you can submit your modules.
 
+Note: You can browse and install those modules via [Fox's Magisk Module Manager](https://github.com/Fox2Code/FoxMagiskModuleManager/releases)
+
 # Module Submissions
 Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) on this repository with `[Module]` in the title and include the link to your repo in the content, then wait for a moderator to approve or deny your module. Once approved, a moderator will mirror your personal repo to the Alt-Repo and give you ownership of it. It is best to then archive your personal repo and work soley here.
 
@@ -11,8 +13,8 @@ We want to make sure that there are no dangerous modules on the Alt-Repo. Please
 
 * Device-specific modules **are allowed**.
 * "Trivial" modules **are allowed**. This includes simple boot scripts.
-* No malicious modules (deleting core files or breaking system intentionally).
-* No broken modules (doesn't do what it says it will).
+* No malicious modules (deleting core files, breaking system intentionally, adware, spyware, or any kind of module harmful to the end user).
+* No broken modules (doesn't do what it says it will, or doesn't define correctly compatible devices).
 * No duplicate submissions.
 * Module ID must match repo name (otherwise Magisk Manager fails to download it).
 
