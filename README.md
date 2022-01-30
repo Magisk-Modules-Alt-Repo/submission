@@ -31,7 +31,7 @@ Here is an example use case for this tool:
 3. Moderator B navigates to their private mmar-migrate fork.
 4. Moderator B goes to the mmar-migrate Actions tab and enters the module information.
 5. Moderator B submits the Action and waits for the completion message.
-6. Moderator B navigates to the Alt-Repo clone / mirror and adds User A as a collaborator.
+6. Moderator B navigates to the Alt-Repo clone and adds User A as a collaborator.
 7. Moderator B closes User A's issue.
 8. User A approves the invitation via email.
 
