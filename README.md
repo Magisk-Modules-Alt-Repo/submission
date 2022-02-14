@@ -17,6 +17,7 @@ We want to make sure that there are no dangerous modules on the Alt-Repo. Please
 * No broken modules (doesn't do what it says it will, or doesn't define correctly compatible devices).
 * No duplicate submissions.
 * Module ID must match repo name (otherwise Magisk Manager fails to download it).
+* The issue author must be the owner of the module being submitted, or have permission from the owner.
 
 We recommend that you publish your module under a license that explicitly permits redistribution of the software, such as the [GPLv3](https://www.gnu.org/licenses/gpl-howto.html) license. Any other FOSS license should work as well.
 It is worth noting that the final approval decision comes from our moderators. If they do not see your module as being fit for the Alt-Repo, they have the choice to deny it. However, they are encouraged to stay unbaised when approving or rejecting modules.
