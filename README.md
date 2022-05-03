@@ -68,11 +68,11 @@ If you need assistance, feel free to contact any of our Alt-Repo moderators thro
 
 **Atrate**
 
-* Email: Atrate@protonmail.com
+* Email: Atrate[at]protonmail.com
 * XDA: Atrate
 
 **Tytydraco**
 
 * Telegram: https://t.me/tytydraco
-* Email: tylernij@gmail.com
+* Email: tylernij[at]gmail.com
 * XDA: tytydraco
