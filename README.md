@@ -12,6 +12,7 @@ Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) 
 We want to make sure that there are no dangerous modules on the Alt-Repo. Please abide by these guidelines.
 
 * Your module must be a valid Magisk/Zygisk module. See the [Developer Guide](https://topjohnwu.github.io/Magisk/guides.html) for more info.
+* Your module must have a README.md file in English with information about the module.
 * Device-specific modules **are allowed**. Make sure to mention that they are device-specific in the README.
 * "Trivial" modules **are allowed**. This includes simple boot scripts.
 * No malicious modules (deleting core files, breaking system intentionally, adware, spyware, or any kind of module harmful to the end user).
