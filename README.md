@@ -24,21 +24,21 @@ We want to make sure that there are no dangerous modules on the Alt-Repo. Please
 We recommend that you publish your module under a license that explicitly permits redistribution of the software, such as the [GPLv3](https://www.gnu.org/licenses/gpl-howto.html) license. Any other FOSS license should work as well. Make sure the license is compatible with all code/binaries you provide — this is especially important if you provide a proprietary package with your module.
 It is worth noting that the final approval decision comes from our moderators. If they do not see your module as being fit for the Alt-Repo, they have the choice to deny it. However, they are encouraged to stay unbaised when approving or rejecting modules.
 
-# Migrating  Repositories
-We have an internal (but publicly accessible) tool that makes migrating repositories to the Alt-Repo easy. Moderators should use [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) (Magisk-Module-Alt-Repo Migrate) to migrate existing repositories to the Alt-Repo.
-
-Here is an example use case for this tool:
-
-1. User A creates an issue titled `[Module] My Custom Module`.
-2. Moderator B approves the module submission.
-3. Moderator B navigates to their private mmar-migrate fork.
-4. Moderator B goes to the mmar-migrate Actions tab and enters the module information.
-5. Moderator B submits the Action and waits for the completion message.
-6. Moderator B navigates to the Alt-Repo clone and adds User A as a collaborator.
-7. Moderator B closes User A's issue.
-8. User A approves the invitation via email.
-
-The benefit of such a system is that moderators can be away from their computers and can handle all necessary migrations online through the GitHub website. This should speed up the module approval process significantly.
+<!-- # Migrating  Repositories -->
+<!-- We have an internal (but publicly accessible) tool that makes migrating repositories to the Alt-Repo easy. Moderators should use [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) (Magisk-Module-Alt-Repo Migrate) to migrate existing repositories to the Alt-Repo. -->
+<!--  -->
+<!-- Here is an example use case for this tool: -->
+<!--  -->
+<!-- 1. User A creates an issue titled `[Module] My Custom Module`. -->
+<!-- 2. Moderator B approves the module submission. -->
+<!-- 3. Moderator B navigates to their private mmar-migrate fork. -->
+<!-- 4. Moderator B goes to the mmar-migrate Actions tab and enters the module information. -->
+<!-- 5. Moderator B submits the Action and waits for the completion message. -->
+<!-- 6. Moderator B navigates to the Alt-Repo clone and adds User A as a collaborator. -->
+<!-- 7. Moderator B closes User A's issue. -->
+<!-- 8. User A approves the invitation via email. -->
+<!--  -->
+<!-- The benefit of such a system is that moderators can be away from their computers and can handle all necessary migrations online through the GitHub website. This should speed up the module approval process significantly. -->
 
 # Permission Levels
 These are the different levels that users can be assigned when choosing to contribute to this project.
