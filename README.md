@@ -11,16 +11,17 @@ Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) 
 # Submission Guidelines
 We want to make sure that there are no dangerous modules on the Alt-Repo. Please abide by these guidelines.
 
-* Device-specific modules **are allowed**.
+* Device-specific modules **are allowed**. Make sure to mention that they are device-specific in the README.
 * "Trivial" modules **are allowed**. This includes simple boot scripts.
 * No malicious modules (deleting core files, breaking system intentionally, adware, spyware, or any kind of module harmful to the end user).
 * No broken modules (doesn't do what it says it will, or doesn't define correctly compatible devices).
-* No duplicate submissions.
-* Module ID must match repo name (otherwise Magisk Manager fails to download it).
+* No duplicate submissions, unless you have been asked to re-submit after corrections.
+* Module ID must match repo name (otherwise Magisk Manager fails to download it). In the event that this isn't the case, your new module repo's name will be the same as the module ID.
 * The issue author must be the owner of the module being submitted, or have permission from the owner.
 * You **must provide the source code** for any executables or APK files included in your submission. If you absolutely need to compile your code, please provide reproducible build instructions. An exception can be made for modules that provide compiled packages/binaries from trusted sources such as recognized developers on the Play Store. In such a case, you **cannot modify** the provided APKs unless doing so does not infringe on the author's copyright and you **must provide the source code** for modifications performed.
+* You **must not obfuscate** the source code of the scripts you provide or any binaries/packages provided unless you are providing a trusted third-party's binary/package where the source has been obfuscated by the third-party at the source.
 
-We recommend that you publish your module under a license that explicitly permits redistribution of the software, such as the [GPLv3](https://www.gnu.org/licenses/gpl-howto.html) license. Any other FOSS license should work as well.
+We recommend that you publish your module under a license that explicitly permits redistribution of the software, such as the [GPLv3](https://www.gnu.org/licenses/gpl-howto.html) license. Any other FOSS license should work as well. Make sure the license is compatible with all code/binaries you provide — this is especially important if you provide a proprietary package with your module.
 It is worth noting that the final approval decision comes from our moderators. If they do not see your module as being fit for the Alt-Repo, they have the choice to deny it. However, they are encouraged to stay unbaised when approving or rejecting modules.
 
 # Migrating  Repositories
