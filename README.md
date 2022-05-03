@@ -18,6 +18,7 @@ We want to make sure that there are no dangerous modules on the Alt-Repo. Please
 * No duplicate submissions.
 * Module ID must match repo name (otherwise Magisk Manager fails to download it).
 * The issue author must be the owner of the module being submitted, or have permission from the owner.
+* You **must provide the source code** for any executables or APK files included in your submission. If you absolutely need to compile your code, please provide reproducible build instructions. An exception can be made for modules that provide compiled packages/binaries from trusted sources such as recognized developers on the Play Store. In such a case, you **cannot modify** the provided APKs unless doing so does not infringe on the author's copyright and you **must provide the source code** for modifications performed.
 
 We recommend that you publish your module under a license that explicitly permits redistribution of the software, such as the [GPLv3](https://www.gnu.org/licenses/gpl-howto.html) license. Any other FOSS license should work as well.
 It is worth noting that the final approval decision comes from our moderators. If they do not see your module as being fit for the Alt-Repo, they have the choice to deny it. However, they are encouraged to stay unbaised when approving or rejecting modules.
