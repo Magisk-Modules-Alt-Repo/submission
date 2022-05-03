@@ -63,6 +63,13 @@ If you are interested in becoming a collaborator, please make an issue on this r
 # Contact
 If you need assistance, feel free to contact any of our Alt-Repo moderators through email or Telegram. If you need direct support, I am always available in a timely manner.
 
+**Atrate**
+
+* Email: Atrate@protonmail.com
+* XDA: Atrate
+
+**Tytydraco**
+
 * Telegram: https://t.me/tytydraco
 * Email: tylernij@gmail.com
 * XDA: tytydraco
