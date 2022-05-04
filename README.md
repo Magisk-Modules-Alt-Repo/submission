@@ -6,10 +6,10 @@ Note: You can browse and install those modules via [Fox's Magisk Module Manager]
 # Module Submissions
 Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) on this repository with `[Module] <Your module's name>` in the title and include the link to your repo in the content, then wait for a moderator to approve or deny your module. Once approved, a moderator will mirror your personal repo to the Alt-Repo and give you ownership of it. It is best to then archive your personal repo and work soley here or set up parallel remote push URLs with git.
 
-**Please make sure your repo name matches your module id, otherwise Magisk Manager will see that the module exists but will fail to pull data from it.**
-
 # Submission Guidelines
 We want to make sure that there are no dangerous modules on the Alt-Repo. Please abide by these guidelines.
+
+## General Guidelines
 
 * Your module must be a valid Magisk/Zygisk module. See the [Developer Guide](https://topjohnwu.github.io/Magisk/guides.html) for more info.
 * Your module must have a README.md file in English with information about the module.
@@ -17,9 +17,11 @@ We want to make sure that there are no dangerous modules on the Alt-Repo. Please
 * "Trivial" modules **are allowed**. This includes simple boot scripts.
 * No malicious modules (deleting core files, breaking system intentionally, adware, spyware, or any kind of module harmful to the end user).
 * No broken modules (doesn't do what it says it will, or doesn't define correctly compatible devices).
-* No duplicate submissions, unless you have been asked to re-submit after corrections.
-* Module ID must match repo name (otherwise Magisk Manager fails to download it). In the event that this isn't the case, your new module repo's name will be the same as the module ID.
+* Module ID must match repo name. In the event that this isn't the case, your new module repo's name will be the same as the module ID.
 * The issue author must be the owner of the module being submitted, or have permission from the owner.
+
+## Source Code Guidelines
+
 * You **must provide the source code** for any executables or APK files included in your submission. If you absolutely need to compile your code, please provide reproducible build instructions. An exception can be made for modules that provide compiled packages/binaries from trusted sources such as recognized developers on the Play Store. In such a case, you **cannot modify** the provided APKs unless doing so does not infringe on the author's copyright and you **must provide the source code** for modifications performed.
 * You **must not obfuscate** the source code of the scripts you provide or any binaries/packages provided unless you are providing a trusted third-party's binary/package where the source has been obfuscated by the third-party at the source.
 
