@@ -29,6 +29,8 @@ We recommend that you publish your module under a license that explicitly permit
 
 It is worth noting that the final approval decision comes from our moderators. If they do not see your module as being fit for the Alt-Repo, they have the choice to deny it. However, they are encouraged to stay unbaised when approving or rejecting modules.
 
+Failure to abide by the guidelines will be pointed out after moderator review. In cases of larger problems, you may be asked to re-submit the module after corrections in a new issue. Infractions on the "no malicious modules" guideline (or straight up distributing malware) will result in a permanent ban from submitting new modules as well as the removal of ones previously submitted by the offender.
+
 <!-- # Migrating  Repositories -->
 <!-- We have an internal (but publicly accessible) tool that makes migrating repositories to the Alt-Repo easy. Moderators should use [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) (Magisk-Module-Alt-Repo Migrate) to migrate existing repositories to the Alt-Repo. -->
 <!--  -->
