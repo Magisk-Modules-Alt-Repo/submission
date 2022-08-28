@@ -22,8 +22,14 @@ We want to make sure that there are no dangerous modules on the Alt-Repo. Please
 
 ## Source Code Guidelines
 
-* You **must provide the source code** for any executables or APK files included in your submission. If you absolutely need to compile your code, please provide reproducible build instructions. An exception can be made for modules that provide compiled packages/binaries from trusted sources such as recognized developers on the Play Store. In such a case, you **cannot modify** the provided APKs unless doing so does not infringe on the author's copyright and you **must provide the source code** for modifications performed, if any.
+* You **must provide the source code** for any executables or APK files included in your submission. If you absolutely need to compile your code, please provide reproducible build instructions. An exception can be made for modules that provide compiled packages/binaries from trusted sources such as recognized developers on the Play Store. In such a case, you **cannot modify** the provided APKs unless doing so does not infringe on the author's copyright and you **must provide the source code/APKtool configuration** for modifications performed, if any.
 * You **must not obfuscate** the source code of the scripts you provide or any binaries/packages provided unless you are providing a trusted third-party's binary/package where the source has been obfuscated by the third-party at the source.
+
+You can provide the source code in various ways, including, but not limited to:
+* On the project's Wiki page
+* As a separate repository
+* On a separate, empty branch
+* Directly in the master branch, with instructions in `customize.sh` that delete it during installation
 
 We recommend that you publish your module under a license that explicitly permits redistribution of the software, such as the [GPLv3](https://www.gnu.org/licenses/gpl-howto.html) license. Any other FOSS license should work as well. Make sure the license is compatible with all code/binaries you provide — this is especially important if you provide a proprietary package with your module.
 
