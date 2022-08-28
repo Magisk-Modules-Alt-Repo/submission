@@ -29,7 +29,7 @@ You can provide the source code in various ways, including, but not limited to:
 * On the project's Wiki page
 * As a separate repository
 * On a separate, empty branch
-* Directly in the master branch, with instructions in `customize.sh` that delete it during installation
+* Directly in the main branch, with instructions in `customize.sh` that delete it during installation
 
 We recommend that you publish your module under a license that explicitly permits redistribution of the software, such as the [GPLv3](https://www.gnu.org/licenses/gpl-howto.html) license. Any other FOSS license should work as well. Make sure the license is compatible with all code/binaries you provide — this is especially important if you provide a proprietary package with your module.
 
