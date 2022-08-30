@@ -39,6 +39,8 @@ It is worth noting that the final approval decision comes from our moderators. I
 
 Failure to abide by the guidelines will be pointed out after moderator review. In cases of larger problems, you may be asked to re-submit the module after corrections in a new issue. Infractions on the "no malicious modules" guideline (or straight up distributing malware) will result in a permanent ban from submitting new modules as well as the removal of ones previously submitted by the offender.
 
+You should maintain your module for as long as possible and remove your repository if it stops working completely and you can't maintain it. We may perform changes without developer approval on any broken modules that are abandoned by their maintainers. This only includes simple fixes, heavily broken, unmaintained modules will simply be deleted.
+
 <!-- # Migrating  Repositories -->
 <!-- We have an internal (but publicly accessible) tool that makes migrating repositories to the Alt-Repo easy. Moderators should use [mmar-migrate](https://github.com/Magisk-Modules-Alt-Repo/mmar-migrate) (Magisk-Module-Alt-Repo Migrate) to migrate existing repositories to the Alt-Repo. -->
 <!--  -->
