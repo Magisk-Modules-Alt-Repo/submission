@@ -90,3 +90,10 @@ If you need assistance, feel free to contact any of our Alt-Repo moderators thro
 * Telegram: https://t.me/tytydraco
 * Email: tylernij[at]gmail.com
 * XDA: tytydraco
+
+**HuskyDG**
+
+* Telegram: https://t.me/HuskyDG
+* Email: deadboltsx303[at]gmail.com
+* XDA: huskydg
+
