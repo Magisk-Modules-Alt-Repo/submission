@@ -1,7 +1,7 @@
 # Magisk Modules Alternative Repository Submissions
 Just like the official Magisk Modules repository (now defunct), this is where you can submit your modules.
 
-Note: You can browse and install those modules via [Fox's Magisk Module Manager](https://github.com/Fox2Code/FoxMagiskModuleManager/releases)
+Note: You can browse and install those modules via the [Androidacy Module Manager](https://github.com/Androidacy/MagiskModuleManager), a continuation of the [Fox's Magisk Module Manager](https://github.com/Fox2Code/FoxMagiskModuleManager/releases) project.
 
 # Module Submissions
 Create an [issue](https://github.com/Magisk-Modules-Alt-Repo/submission/issues) on this repository with `[Module] <Your module's name>` in the title and include the link to your repo in the content, then wait for a moderator to approve or deny your module. Once approved, a moderator will mirror your personal repo to the Alt-Repo and give you ownership of it. It is best to then archive your personal repo and work soley here or set up parallel remote push URLs with git.
