@@ -1,0 +1,31 @@
+name: Moderator Submission
+description: Preferred moderator proposal template
+title: "[Moderator] "
+labels: ["moderator"]
+body:
+  - type: input
+    id: mod-name
+    attributes:
+      label: Name
+      placeholder: John Doe
+    validations:
+      required: true
+  - type: textarea
+    id: mod-projects
+    attributes:
+      label: Projects
+      placeholder: |
+          * Big project #1
+          * Big project #2
+          * Etc...
+    validations:
+      required: true
+  - type: textarea
+    id: mod-extra-info
+    attributes:
+      label: Extra Info (optional)
+      placeholder: |
+          * I love ABC
+          * I have XYZ
+    validations:
+      required: false
