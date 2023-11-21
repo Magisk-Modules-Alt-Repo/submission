@@ -37,14 +37,14 @@ body:
   - type: input
     id: module-link
     attributes:
-      label: Link
+      label: Module repository link
       placeholder: https://www.github.com/username/repo
     validations:
       required: true
   - type: input
     id: module-source-code
     attributes:
-      label: Link
-      placeholder: None
+      label: Source code link (for compiled binaries/APKs)
+      placeholder: https://www.github.com/username/repo
     validations:
       required: false      
