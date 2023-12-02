@@ -1,5 +1,5 @@
-name: Module Takedown
-description: Preferred Magisk Module takedown template
+name: Module Takedown Request
+description: Preferred Magisk Module takedown request template
 title: "[Takedown] "
 labels: ["takedown"]
 body:
@@ -7,9 +7,8 @@ body:
     attributes:
       value: |
         ## Only accepted when
-        - Doesn't follow Magisk module format after approval
-        - Is not well maintained after approval
-        - You're (issue author) provided the GitHub author, so we can contact him/she.
+        - The module doesn't follow Magisk module format after approval
+        - The module is not well maintained after approval
 
   - type: input
     id: module-id
@@ -35,9 +34,8 @@ body:
   - type: textarea
     id: mod-takedown-reas
     attributes:
-      label: Takedown Reason
+      label: Takedown Request Reason
       placeholder: |
-            Module does not follow magisk module format
-            bla bla...
+        Detailed reasoning
     validations:
       required: true
