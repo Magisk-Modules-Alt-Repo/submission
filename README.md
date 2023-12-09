@@ -97,3 +97,9 @@ If you need assistance, feel free to contact any of our Alt-Repo moderators thro
 * Email: deadboltsx303[at]gmail.com
 * XDA: huskydg
 
+**Der_Googler**
+
+* Telegram: https://t.me/Der_Googler
+* Email: jimmy[at]dergoogler.com
+* XDA: Der_Googler
+
