@@ -57,6 +57,23 @@ You should maintain your module for as long as possible and remove your reposito
 <!--  -->
 <!-- The benefit of such a system is that moderators can be away from their computers and can handle all necessary migrations online through the GitHub website. This should speed up the module approval process significantly. -->
 
+# Disclaimer
+
+We do our best to check modules as they are submitted into MMAR for any
+malicious/broken functionality, but we cannot reasonably check every commit from
+the time the modules are accepted. As such we withhold any responsibility for
+bricked devices, unintended behavior, malware, or other problems arising from
+using modules submitted to MMAR. If you notice such a module, though, please let
+us know (see below).
+
+# Reporting modules
+
+If you notice a broken module or one containing malware, please create an issue
+here with the `Module Takedown Request` template. In case of matters requiring
+urgent attention, such as modules that brick devices or malware, please *also*
+ping us in the issue and send an e-mail message about that (see the `Contact`
+section below).
+
 # Permission Levels
 These are the different levels that users can be assigned when choosing to contribute to this project.
 
@@ -85,12 +102,6 @@ If you need assistance, feel free to contact any of our Alt-Repo moderators thro
 * Email: Atrate[at]protonmail.com
 * XDA: Atrate
 
-**Tytydraco**
-
-* Telegram: https://t.me/tytydraco
-* Email: tylernij[at]gmail.com
-* XDA: tytydraco
-
 **HuskyDG**
 
 * Telegram: https://t.me/HuskyDG
@@ -103,3 +114,8 @@ If you need assistance, feel free to contact any of our Alt-Repo moderators thro
 * Email: jimmy[at]dergoogler.com
 * XDA: Der_Googler
 
+**Tytydraco**
+
+* Telegram: https://t.me/tytydraco
+* Email: tylernij[at]gmail.com
+* XDA: tytydraco
