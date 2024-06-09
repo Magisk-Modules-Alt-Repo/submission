@@ -87,7 +87,7 @@ jobs:
           body: |
             Hey @${{ github.event.issue.user.login }},
 
-            your module submission has been approved! Your module will be likly available at https://github.com/${{ github.repository_owner }}/${{ steps.app_mod_name.outputs.MODULE_ID }}.
+            your module submission has been approved! Your module will be likely available at https://github.com/${{ github.repository_owner }}/${{ steps.app_mod_name.outputs.MODULE_ID }}.
             
             Also please check your inbox for an invitation :blush:.
 
