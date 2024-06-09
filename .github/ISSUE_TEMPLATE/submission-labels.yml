@@ -1,0 +1,124 @@
+name: Submission Comment Bot
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  deadlines:
+    if: "${{ contains(github.event.label.name, 'deadline: 2 weeks') }}"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create comment
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'create-comment'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            Hey @${{ github.event.issue.user.login }},
+
+            your module submission was labeled with a deadline of **two weeks**. If you don't response within the two weeks your module will be rejected.
+
+
+            Rest regards,
+            The MMAR Team
+
+  spam:
+    if: ${{ contains(github.event.label.name, 'spam') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set labels
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'set-labels'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          labels: 'spam'
+
+      - name: Create comment
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'create-comment'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            Hey @${{ github.event.issue.user.login }},
+
+            your submission was closed due spam.
+
+
+            Rest regards,
+            The MMAR Team
+
+      - name: Close issue
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'close-issue'
+          close-reason: not_planned
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+
+  approved:
+    if: ${{ contains(github.event.label.name, 'approved') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add labels
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'add-labels'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          labels: "approved"
+
+      - name: Format Module ID
+        id: app_mod_name
+        run: |
+          echo "MODULE_ID=${SUB_TITLE//\[Module\]?(\s)/}" >> $GITHUB_OUTPUT
+        env:
+          SUB_TITLE: ${{ github.event.issue.title }}
+
+      - name: Create comment
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'create-comment'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            Hey @${{ github.event.issue.user.login }},
+
+            your module submission has been approved! Your module will be likly available at https://github.com/${{ github.repository_owner }}/${{ steps.app_mod_name.outputs.MODULE_ID }}.
+            
+            Also please check your inbox for an invitation :blush:.
+
+
+            Rest regards,
+            The MMAR Team
+
+      - name: Close issue
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'close-issue'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          close-reason: completed
+          issue-number: ${{ github.event.issue.number }}
+  
+  rejected:
+    if: ${{ contains(github.event.label.name, 'rejected') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add labels
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'add-labels'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          labels: "rejected"
+
+      - name: Close issue
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'close-issue'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          close-reason: not_planned
+          issue-number: ${{ github.event.issue.number }}
