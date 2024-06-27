@@ -31,6 +31,27 @@ You can provide the source code in various ways, including, but not limited to:
 * On a separate, empty branch
 * Directly in the main branch, with instructions in `customize.sh` that delete it during installation
 
+### Anti-Features
+
+The new `json-v2` format supports Anti-Features like F-Droid, this gives more transparency about the modules and helps the user if a module includes non-free dependencies etc.
+
+We list the current supported Anti-Fetures below:
+
+| Name                      | ID                | Description                                                                                  |
+| ------------------------- | ----------------- | -------------------------------------------------------------------------------------------- |
+| Ads                       | `Ads`             | Advertising                                                                                  |
+| Tracking                  | `Tracking`        | Tracks and/or reports your activity to somewhere, even when it can be turned off             |
+| Non-Free Network Services | `NonFreeNet`      | Promotes or depends entirely on a non-changeable or non-free network service                 |
+| Non-Free Addons           | `NonFreeAdd`      | Promotes other non-libre module or plugins                                                   |
+| Non-Free Dependencies     | `NonFreeDep`      | Needs a non-libre module to work (e.g. Google Maps, Market)                                  |
+| NSFW                      | `NSFW`            | Contains content that the user may not want to be publicized or visible everywhere           |
+| Upstream Non-Free         | `UpstreamNonFree` | Upstream source code is not libre, and this version has those parts replaced or rewritten    |
+| Non-Free Assets           | `NonFreeAssets`   | Non-libre media in things that are not code (e.g. images, sound, music, 3D-models, or video) |
+| Known Vulnerability       | `KnownVuln`       | Known security vulnerability                                                                 |
+| No Source Since           | `NoSourceSince`   | Source code no longer available, making new releases impossible                              |
+| Obfuscation               | `Obfuscation`     | Module includes obfuscated code                                                              |
+| Unasked removal           | `UnaskedRemoval`  | Module removes app, permissions and other modules without approval                           |
+
 We recommend that you publish your module under a license that explicitly permits redistribution of the software, such as the [GPLv3](https://www.gnu.org/licenses/gpl-howto.html) license. Any other FOSS license should work as well. Make sure the license is compatible with all code/binaries you provide — this is especially important if you provide a proprietary package with your module.
 
 ## Concluding remarks

@@ -1,0 +1,42 @@
+name: Submission Checker
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  submission-check:
+    if: ${{ !startsWith(github.event.issue.title, '[Module]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create comment
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'create-comment'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            Hey @${{ github.event.issue.user.login }},
+
+            your module submission is invalid, a submission should start with `[Module] <module_id>`.
+            Feel free to re-submit your module with the correct submission title.
+
+
+            Rest regards,
+            The MMAR Team
+
+      - name: Set labels
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'set-labels'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          labels: 'invalid'
+
+      - name: Close submission
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'close-issue'
+          close-reason: not_planned
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
