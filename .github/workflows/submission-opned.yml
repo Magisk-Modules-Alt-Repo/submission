@@ -21,8 +21,7 @@ jobs:
             your module submission is invalid, a submission should start with `[Module] <module_id>`.
             Feel free to re-submit your module with the correct submission title.
 
-
-            Rest regards,
+            Best regards,
             The MMAR Team
 
       - name: Set labels

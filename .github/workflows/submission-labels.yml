@@ -18,10 +18,10 @@ jobs:
           body: |
             Hey @${{ github.event.issue.user.login }},
 
-            your module submission was labeled with a deadline of **two weeks**. If you don't response within the two weeks your module will be rejected.
+            your module submission was labeled with a deadline of **two weeks**. 
+            If you don't respond within that period, your module will be rejected.
 
-
-            Rest regards,
+            Best regards,
             The MMAR Team
 
   spam:
@@ -45,10 +45,9 @@ jobs:
           body: |
             Hey @${{ github.event.issue.user.login }},
 
-            your submission was closed due spam.
+            your submission was closed due to being considered spam.
 
-
-            Rest regards,
+            Best regards,
             The MMAR Team
 
       - name: Close issue
@@ -87,12 +86,14 @@ jobs:
           body: |
             Hey @${{ github.event.issue.user.login }},
 
-            your module submission has been approved! Your module will be likely available at https://github.com/${{ github.repository_owner }}/${{ steps.app_mod_name.outputs.MODULE_ID }}.
-            
-            Also please check your inbox for an invitation :blush:.
+            your module submission has been approved!
+            The module will likely be available at https://github.com/${{ github.repository_owner }}/${{ steps.app_mod_name.outputs.MODULE_ID }}.
 
+            Check your e-mail inbox for an invite to your new repository and remember to 'Watch' your repository on Github to have new issues in it show up in your feed.
 
-            Rest regards,
+            Make sure to change your local repository's push URLs or configure 2 parallel push URLs.
+
+            Best regards,
             The MMAR Team
 
       - name: Close issue
