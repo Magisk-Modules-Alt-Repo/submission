@@ -21,8 +21,8 @@ jobs:
             your module submission was labeled with a deadline of **two weeks**. 
             If you don't respond within that period, your module will be rejected.
 
-            Best regards,
-            The MMAR Team
+            *Best regards,
+            The MMAR Team*
 
   spam:
     if: ${{ contains(github.event.label.name, 'spam') }}
@@ -47,8 +47,8 @@ jobs:
 
             your submission was closed due to being considered spam.
 
-            Best regards,
-            The MMAR Team
+            *Best regards,
+            The MMAR Team*
 
       - name: Close issue
         uses: actions-cool/issues-helper@v3
@@ -59,7 +59,7 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
 
   approved:
-    if: ${{ contains(github.event.label.name, 'approved') }}
+    if: ${{ startsWith(github.event.issue.title, '[Module]') && contains(github.event.label.name, 'approved') }}
     runs-on: ubuntu-latest
     steps:
       - name: Add labels
@@ -93,8 +93,8 @@ jobs:
 
             Make sure to change your local repository's push URLs or configure 2 parallel push URLs.
 
-            Best regards,
-            The MMAR Team
+            *Best regards,
+            The MMAR Team*
 
       - name: Close issue
         uses: actions-cool/issues-helper@v3
