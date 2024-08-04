@@ -1,6 +1,7 @@
 name: Module Submission
 description: Preferred Magisk Module submission template
 title: '[Module] module_id'
+labels: module
 body:
   - type: markdown
     attributes:
