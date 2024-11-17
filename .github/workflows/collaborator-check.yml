@@ -1,0 +1,131 @@
+name: Collaborator Check
+
+on:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const ORGANIZATION = "Magisk-Modules-Alt-Repo"; 
+            const EXCLUDED_USERS = ["Atrate", "DerGoogler", "Fox2Code", "HuskyDG", "tytydraco"]; 
+            const EXCLUDED_REPOS = ["HuskyDG_BootloopSaver", "vintf-bypass", "mkshrc", "node", "xhhttp"]; 
+            const EXCLUDED_TOPIC_KEYWORD = "non-module"; 
+
+            async function fetchAllRepositories(org) {
+                const repos = [];
+                let page = 1;
+
+                while (true) {
+                    const { data } = await github.rest.repos.listForOrg({
+                        org,
+                        type: "all",
+                        per_page: 100,
+                        page,
+                    });
+
+                    if (data.length === 0) break;
+
+                    repos.push(...data);
+                    page++;
+                }
+
+                return repos;
+            }
+
+            async function fetchRepositoryTopics(org, repo) {
+                try {
+                    const { data } = await github.rest.repos.getAllTopics({
+                        owner: org,
+                        repo,
+                    });
+                    return data.names || []; 
+                } catch (error) {
+                    console.error(`Error fetching topics for ${repo}: ${error.message}`);
+                    return [];
+                }
+            }
+
+            async function fetchCollaborators(org, repo) {
+                try {
+                    const { data } = await github.rest.repos.listCollaborators({
+                        owner: org,
+                        repo,
+                        affiliation: "all",
+                    });
+
+                    return data.map(user => user.login); 
+                } catch (error) {
+                    if (error.status === 404) {
+                        console.error(`Repository "${repo}" is not accessible.`);
+                        return [];
+                    }
+                    console.error(`Error fetching collaborators for ${repo}: ${error.message}`);
+                    return [];
+                }
+            }
+
+            async function processRepositories(org) {
+                const allRepos = await fetchAllRepositories(org);
+
+                if (allRepos.length === 0) {
+                    console.log(`No repositories found for organization "${org}".`);
+                    return;
+                }
+
+                console.log(`Found ${allRepos.length} repositories. Filtering excluded repositories...`);
+
+                const filteredRepos = [];
+                for (const repo of allRepos) {
+                    const { name } = repo;
+
+                    if (EXCLUDED_REPOS.includes(name)) {
+                        console.log(`Excluding repository "${name}" (explicit exclusion).`);
+                        continue;
+                    }
+
+                    const topics = await fetchRepositoryTopics(org, name);
+                    if (topics.includes(EXCLUDED_TOPIC_KEYWORD)) {
+                        console.log(`Excluding repository "${name}" (topic "${EXCLUDED_TOPIC_KEYWORD}" found).`);
+                        continue;
+                    }
+
+                    filteredRepos.push(name);
+                }
+
+                if (filteredRepos.length === 0) {
+                    console.log(`No repositories to process after exclusions.`);
+                    return;
+                }
+
+                console.log(`Processing ${filteredRepos.length} repositories after exclusions...`);
+
+                let unmaintainedCount = 0;
+
+                for (const repo of filteredRepos) {
+                    const collaborators = await fetchCollaborators(org, repo);
+                    const filteredCollaborators = collaborators.filter(user => !EXCLUDED_USERS.includes(user));
+
+                    if (filteredCollaborators.length > 0) {
+                        console.log(`Collaborators for repository "${repo}":`);
+                        filteredCollaborators.forEach(user => console.log(`- ${user}`));
+                    } else {
+                        console.log(`No collaborators found (after exclusions) for repository "${repo}".`);
+                        unmaintainedCount++;
+                    }
+                }
+
+
+                const totalRepos = filteredRepos.length;
+                const unmaintainedPercentage = ((unmaintainedCount / totalRepos) * 100).toFixed(2);
+
+                console.log(`\nSummary:`);
+                console.log(`- Total repositories processed: ${totalRepos}`);
+                console.log(`- Unmaintained repositories (no collaborators): ${unmaintainedCount}`);
+                console.log(`- Percentage of unmaintained repositories: ${unmaintainedPercentage}%`);
+            }
+
+            processRepositories(ORGANIZATION);
