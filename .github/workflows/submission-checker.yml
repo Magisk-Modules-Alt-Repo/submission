@@ -10,7 +10,7 @@ jobs:
       - name: Validate issue title
         id: validate-title
         run: |
-          if [[ ! "${{ github.event.issue.title }}" =~ ^(\[[mM]odule\][[:space:]]*([a-zA-Z][a-zA-Z0-9._-]+)|\[[tT]akedown\][[:space:]]*(.+))$ ]]; then
+          if [[ ! "${{ github.event.issue.title }}" =~ ^\[([mM]odule|[tT]akedown)\][[:space:]]*([a-zA-Z][a-zA-Z0-9._-]+)$ ]]; then
             echo "valid=false" >> $GITHUB_ENV
           else
             echo "valid=true" >> $GITHUB_ENV
