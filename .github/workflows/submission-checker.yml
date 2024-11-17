@@ -1,0 +1,51 @@
+name: Submission Checker
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  submission-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate issue title
+        id: validate-title
+        run: |
+          if [[ ! "${{ github.event.issue.title }}" =~ ^(\[[mM]odule\][[:space:]]*([a-zA-Z][a-zA-Z0-9._-]+)|\[[tT]akedown\][[:space:]]*(.+))$ ]]; then
+            echo "valid=false" >> $GITHUB_ENV
+          else
+            echo "valid=true" >> $GITHUB_ENV
+          fi
+
+      - name: Create comment for invalid title
+        if: env.valid == 'false'
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'create-comment'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            Hey @${{ github.event.issue.user.login }},
+            
+            your module submission is invalid. A valid submission title must match the pattern `^\[[mM]odule\][[:space:]]*([a-zA-Z][a-zA-Z0-9._-]+)$` (e.g., `[Module] my-module`), otherwise your module can't added.
+            Please update your submission title and try again.
+            
+            *Best regards,  
+            The MMAR Team*
+
+      - name: Set invalid label
+        if: env.valid == 'false'
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'set-labels'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          labels: 'invalid'
+
+      - name: Close invalid submission
+        if: env.valid == 'false'
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'close-issue'
+          close-reason: not_planned
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
